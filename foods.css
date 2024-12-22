@@ -1,0 +1,41 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.picture-description-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+    box-sizing: border-box;
+    background-color: rgba(255, 165, 0, 0.5);
+}
+
+.food-pic {
+    width: 200px; 
+    height: 200px; 
+    object-fit: cover; 
+    margin: 10px 0; 
+}
+
+.description {
+    text-align: center;
+    margin-top: 10px;
+    max-width: 80%; /* Limit the display area of the description */
+}
+
+@media (min-width: 1024px) {
+    .picture-description-box {
+        width: 30%; /* Adjust the width to fit three boxes side by side */
+    }
+}
+
+@media (max-width: 768px) {
+    .picture-description-box {
+        width: 100%;
+    }
+}
